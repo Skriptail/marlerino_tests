@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="1win" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/modern-normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="main__page">
+            <div class="main__wrapper">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <img src="img/rocket_queen.png" alt="rocket" class="rocket rocket__animated" id="spinner"
+                    data-img="./img">
+                <img src="img/glogo.png" alt="sublogo" class="sublogo">
+                <h1 class="sales__text">BONUS $5000 <br>
+                    +200 spins
+                </h1>
+                <button class="btn"><a href="https://www.lipsum.com/" class="btn__link">PLAY</a></button>
+            </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+    <span id="22e0dac5-1b31-13d3-0782-04e847b25495"></span>
+    <script type="application/javascript">
+    document.getElementById('22e0dac5-1b31-13d3-0782-04e847b25495').innerHTML = '<a href="https://mytrackertest.com/x35hRP?&se_referrer=' + encodeURIComponent(document.referrer) + '&default_keyword=' + encodeURIComponent(document.title) + '&'+window.location.search.replace('?', '&')+'">Link</a>';
+    </script>
+    <script>
+
+    // Базовый URL оффера
+    const baseURL = "//mytrackertest.com/x35hRP";
+
+    // Создать параметры для ссылки
+    const queryParams = [
+        `se_referrer=${encodeURIComponent(document.referrer)}`, // Откуда пришел пользователь
+        `default_keyword=${encodeURIComponent(document.title)}`, // Заголовок текущей страницы
+        window.location.search.substring(1) // Параметры из URL
+    ].join('&');
+
+    // Установить новую ссылку
+    popupButton.href = `${baseURL}?${queryParams}`;
+
+    // Опционально: открыть в новом окне
+    popupButton.target = "_blank"; // Удалить эту строку, если не нужно открывать в новом окне
+    </script>
+</body>
+
+</html>
